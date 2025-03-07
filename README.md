@@ -33,9 +33,11 @@ pymysql
 pip install -r requirements.txt
 
 ## 项目结构
+```
 team-bot/
 ├── bot-py/              # 机器人核心代码
 │   ├── src/            # 插件目录
 │   ├── pyproject.toml  # 项目配置文件
 │   └── README.md       # 说明文件
 └── Lagrange.OneBot      # QQ 客户端
+```
