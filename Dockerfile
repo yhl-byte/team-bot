@@ -5,7 +5,7 @@ COPY . .
 
 EXPOSE 8080
 
-RUN  ./Lagrange.OneBot
+RUN ./Lagrange.OneBot
 
 RUN cd bot-py
 
