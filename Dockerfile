@@ -5,10 +5,8 @@ COPY . .
 
 EXPOSE 8080
 
-RUN ./Lagrange.OneBot
+RUN /app/Lagrange.OneBot
 
-RUN cd ./bot-py
+RUN pip install -r app/bot-py/requirements.txt
 
-RUN pip install -r requirements.txt
-
-CMD ["nb", "run"]
+CMD ["/app/bot-py/nb", "run", "--reload"]
